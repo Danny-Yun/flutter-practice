@@ -38,7 +38,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // 여기서 MaterialApp 위젯은 title이라는 문자열을 argument로 가지고 있다고 볼 수 있다. */
+      // 여기서 MaterialApp 위젯은 title이라는 문자열을 argument로 가지고 있다고 볼 수 있다.
+      // MaterialApp 내의 타이틀은 앱을 총칭하는 이름이다. 가령 스마트폰 상에서 최근 사용한 리스트를
+      // 보여줄 때 MaterialApp에서 설정한 타이틀이 보여진다.
       title: 'First app',
       theme: ThemeData(
         // ThemeData는 앱의 기본적인 디자인 테마를 지정하는 위젯이다. 이 역시도 argument를 가진다.
@@ -47,6 +49,34 @@ class MyApp extends StatelessWidget {
       ),
       // home은 앱이 정상적으로 실행되었을 때 가장 먼저 화면에 보여주는 경로이다.
       home: MyHomePage(),
+    );
+  }
+}
+
+/* 
+  커스텀 위젯을 만들 때엔 항상 Stateless Widget으로 만들지, Stateful Widget으로 만들지를 
+  먼저 고민해봐야 한다. 만약 위젯 내에 데이터를 받거나 체크박스처럼 변할 수 있는 요소가 
+  하나라도 있으면 Stateful Widget으로 지정해야 한다. 
+*/
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // Scaffold는 사전적으로 무언가를 혼자 해낼 수 있도록 발판을 마련해주다는 의미를 내포하기도 한다.
+      // 만약 Scaffold 위젯이 없다면 그 어떠한 요소들도 앱 화면에 배치할 수 없다. 그만큼 매우 중요한 위젯이다.
+      // 이제부터는 본격적으로 앱 화면에 보여질 앱 페이지를 디자인할 수 있다.
+      appBar: AppBar(
+        title: Text('My First app!'),
+      ),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            Text('Hello'),
+            Text('Hello'),
+            Text('Hello'),
+          ],
+        ),
+      ),
     );
   }
 }
