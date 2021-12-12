@@ -1,16 +1,6 @@
-# app_icon_menu
+# :mag_right: app_icon_menu
 
-A new Flutter project.
+## :heavy_check_mark: [main.dart](https://github.com/Riudiu/flutter-practice/blob/master/app_icon_menu/lib/main.dart)
 
-## Getting Started
+![app_icon_menu_riudiu](https://user-images.githubusercontent.com/86466976/145710643-89368a28-ebd8-4e23-8d1c-da27a3a47712.jpg)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
