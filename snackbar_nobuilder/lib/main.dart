@@ -38,9 +38,19 @@ class MySnackBar extends StatelessWidget {
         child: Text('Press me'),
         onPressed: () {
           // Scaffold가 context2보다 상위에 있기 때문에 이제 context가 Scaffold를 찾을 수 있게 된다.
-          ScaffoldMessenger.of(context2).showSnackBar(SnackBar(
-            content: Text('Hellow'),
-          ));
+          ScaffoldMessenger.of(context2).showSnackBar(
+            SnackBar(
+              content: Text(
+                'Hellow',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              backgroundColor: Colors.teal,
+              duration: Duration(milliseconds: 5000 /* 지속시간 1초 */),
+            ),
+          );
         },
       ),
     );
