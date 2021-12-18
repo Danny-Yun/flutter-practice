@@ -49,6 +49,12 @@ class MySnackBar extends StatelessWidget {
               ),
               backgroundColor: Colors.teal,
               duration: Duration(milliseconds: 5000 /* 지속시간 1초 */),
+              action: SnackBarAction(
+                label: 'cancel',
+                onPressed: () {
+                  print('blabla');
+                },
+              ),
             ),
           );
         },
