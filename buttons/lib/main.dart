@@ -150,6 +150,20 @@ class MyButtons extends StatelessWidget {
                 // minimumSize: Size(250, 70),
               ),
             ),
+            ButtonBar(
+              alignment: MainAxisAlignment.center,
+              buttonPadding: EdgeInsets.all(20),
+              children: [
+                TextButton(
+                  onPressed: () {},
+                  child: Text('Text Button'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('Elevated Button'),
+                ),
+              ],
+            ),
           ],
         ),
       ),
