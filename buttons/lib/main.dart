@@ -79,6 +79,77 @@ class MyButtons extends StatelessWidget {
                 ),
               ),
             ),
+            TextButton.icon(
+              onPressed: () {
+                print('this is Text icon Button');
+              },
+              icon: Icon(
+                Icons.home,
+                size: 30,
+                color: Colors.black87,
+              ),
+              label: Text(
+                "GO TO HOME",
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+              style: TextButton.styleFrom(
+                primary: Colors.teal,
+              ),
+            ),
+            ElevatedButton.icon(
+              onPressed: () {
+                print('this is Elevated icon Button');
+              },
+              icon: Icon(
+                Icons.home,
+              ),
+              label: Text(
+                'GO TO HOME',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.black87,
+                minimumSize: Size(250, 70),
+              ),
+            ),
+            OutlinedButton.icon(
+              onPressed: () {
+                print('this is Outlined icon Button');
+              },
+              icon: Icon(
+                Icons.home,
+              ),
+              label: Text(
+                'GO TO HOME',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+              style: OutlinedButton.styleFrom(
+                primary: Colors.black87,
+              ),
+            ),
+            ElevatedButton.icon(
+              onPressed: null,
+              icon: Icon(
+                Icons.home,
+              ),
+              label: Text(
+                'GO TO HOME',
+                style: TextStyle(
+                  fontSize: 20,
+                ),
+              ),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.black87,
+                onSurface: Colors.pink,
+                // minimumSize: Size(250, 70),
+              ),
+            ),
           ],
         ),
       ),
